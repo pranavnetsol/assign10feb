@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function(){
+            $("#appendit").click(function(){
+                $("#text_list li:first-child").each(function()
+                {
+                    $(this).remove().appendTo('#send_res ul');
+                })
+             })
+             $("#prependit").click(function()
+             {
+             $("#send_res li:first-child").each(function()
+                {
+                    $(this).remove().appendTo('.list ul');
+                })
+            })
+});
+    </script>
+</head>
+<body>
+    <div class="send_tt" id="text_list">
+        <div class="list">
+            <ul >
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+                <li>TEXT TEXT</li>
+               
+            </ul>
+        </div>
+    
+            <div >
+                <button id="appendit">Swap </button>
+            </div>
+            <div >
+                <button id="prependit">Swap back</button>
+            </div>
+        
+        <div class="send" id="send_res">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
