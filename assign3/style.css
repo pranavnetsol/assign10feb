@@ -1,0 +1,40 @@
+.send_tt
+{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    list-style-type: none;
+}
+.list , .send
+ {
+    
+    height:1000px;
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+}
+#appendit{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+    color: white;
+    background-color: aquamarine;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 21px;
+    padding: 10px ;
+    border: none;
+    margin:20px;
+}
+#prependit{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+    color: white;
+    background-color: aquamarine;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 21px;
+    padding: 10px ;
+    border: none;
+    margin:20px;
+}
